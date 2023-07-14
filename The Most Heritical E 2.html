@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Player Ms Anime</title>
+        <link rel="icon" href="/img/Shianime.png" type="image/x-icon">
+        <meta name="robots" content="noindex">
+        <meta name="googlebot" content="noindex">
+        <meta name="referrer" content="never">
+        <meta name="referrer" content="no-referrer">
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+        <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <video controls crossorigin playsinline poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQChmRsFjbrTz3SrbvdtndI_cO2lnrgoM9YEg&usqp=CAU">
+                <source src="" size="360" type="video/mp4">
+                <source src="" size="480" type="video/mp4">
+                <source src="" size="720" type="video/mp4">
+                <source src="https://ronjjg.am.files.1drv.com/y4mFPFRtrx5jZVS3MPKbZslQRJRKgED4jjOwymjJI6bt_Y2qsdCO5NAh0LDXZRtpokYRABwep_tl6OokfD2CxcC_sfs616rLmn1YamxnPtpU7u-gE7X6dFQeEGowwYJp7p9cyzX8pf6xEhbDlLklRWviVOGnjnS4pvFddoKqFun5q2G96fTo7ctG48eMFPdM7uH28wG_111phyy8negst0bfw?" size="1080" type="video/mp4">
+                    <!-- Fallback for browsers that don't support the <video> element -->
+                    <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+            </video>
+        </div>
+        <!-- Plyr resources and browser polyfills are specified in the pen settings -->
+        <style type="text/html">
+            .container {
+	margin: 50px auto;
+	max-width: 500px;
+}
+        </style>
+        <script type="text/javascript">
+            // Change the second argument to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr('video', {captions: {active: false}});
+
+// Expose player so it can be used from the console
+window.player = player;
+
+        </script>
+    </body>
+</html>
